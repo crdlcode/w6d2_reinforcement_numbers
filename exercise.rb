@@ -10,9 +10,7 @@
 hash = {}
 
 (1..50).each do |i|
-  if i % 2 == 0
-    hash[i] = i * 2
-  elsif i % 7 == 0
+  if i % (2*7) == 0 #divisible by 2&7
     hash[i] = i * 2
   elsif i % 2 == 0
     hash[i] = i + 1
